@@ -15,7 +15,7 @@ class MyRunnable implements Runnable{
     }
     @Override
     public void run() {
-        Main m = new Main();
+        Server m = new Server();
 //        try (ServerSocket serverSocket = new ServerSocket(port)) {
 //            serverSocket.setReuseAddress(true);
 //
@@ -38,7 +38,7 @@ class MyRunnable implements Runnable{
         }
     }
 }
-public class Main {
+public class Server{
     public void handleRequest(Socket socket) {
         BufferedReader in = null;
         PrintWriter out = null;
